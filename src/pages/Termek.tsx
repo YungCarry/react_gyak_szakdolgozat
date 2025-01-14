@@ -1,9 +1,14 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Termek = () => {
     const { id } = useParams();
+    const navigate = useNavigate();
     const [nev, setNev] = useState<string>('');
+    const submit = () => {
+        //alert("Clicked")
+        navigate('/elso')
+    };
     return (
         <>
             <h1>Termék ID: {id}</h1>
@@ -11,7 +16,7 @@ const Termek = () => {
             <h1>Termék név: {nev}</h1>
             <div>
                 <input type="text" onChange={(e) => setNev(e.target.value)}/>
-                <button>Start</button>
+                <button onClick={submit}>Start</button>
             </div>
         </>
     );
