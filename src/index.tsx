@@ -4,7 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Masodik from './pages/Masodik';
 import Elso from './pages/Elso';
-import Termek from './pages/Termek';
+import Termek from './pages/Termekpage';
 import Termekek from './pages/Termekek';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
