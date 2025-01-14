@@ -6,7 +6,7 @@ const Termek = () => {
     const navigate = useNavigate();
     const [nev, setNev] = useState<string>('');
     const submit = () => {
-        //alert("Clicked")
+        alert("Clicked")
         navigate('/elso')
     };
     return (
